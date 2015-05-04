@@ -58,4 +58,17 @@ i'll use --> to represent an arrow.
 - * / # --> pair words, * for next and # for previous
 - zf --> fold(with direction keys)
 - zo --> unfold
+- ctrl-u --> move up half screen
+- ctrl-d --> move down half screen
+- ctrl-b --> move up full screen
+- ctrl-f --> move down full screen
+- zz --> set current line to the center of the screen
+- zt --> set current line to the top of the screen
+- zb --> set current line to the bottom of the screen
+- 50% --> move cursor to the 50% position
+- ` --> move to 
 
+### Editting
+- D / dd --> delete the current line
+- Y / yy --> copy current line {modifying 'Y' to copy from cursor to end of line}
+- C --> modify from now to end of line
