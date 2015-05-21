@@ -38,4 +38,29 @@
 - a:hover --> a link when the user mouse is over it
 - a:active --> a link the moment it is clicked
 
+### lists
+- list-style --> specify all
+- list-style-type --> customize list markers (circle, square, upper-roman, lower-alpha)
+- list-style-image --> to specify an image as the list item marker (use *url*) [cross-browser solution for list item image marker]
+- list-style-position --> to specify if the list-item markers should appear inside or outside the content flow
+
+### table
+- border --> specify border for table [1px solid black]
+- border-collapse --> set whether the table borders are collapsed into a single border or separated [collapse]
+- width --> define width
+- height --> define height
+- text-align --> set the horizontal alignment [left, center, right]
+- vertical-align --> set the vertical alignment[top, bottom, center]
+- padding --> control space between the border and content in table
+- table color --> [background-color, color]
+- caption-side --> *caption* is a tab in HTML to define table. *caption-side* is to set position of caption [top, bottom]
+
+### border
+- border-style --> specify the border style [solid, dotted, double, none]
+- border-width --> specify the border width [10px, medium]
+- border-color --> specify the border color
+- border-top-style --> specify border attr via direction [top, bottom, right, left] 
+- border --> set border  in one line
+
+
 
