@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Ninja</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <style>
+    * {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: #747704;
+    }
+    .text-muted {
+      color: #bcbbbb;
+    }
+    .text-thin {
+      font-weight: 100;
+    }
+
+    .title-super {
+      font-size: 60px;
+    }
+
+    .title-logo {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <section class="col-md-6 text-uppercase text-right">
+        <img src="http://placehold.it/100x100" alt="logo" class="img-responsive title-logo">
+      </section>
+      <section class="col-md-6 text-uppercase text-right">
+        <h1 class="text-thin title-super">Dong Wang</h1>
+        <h3>Front-end Ninja</h3>
+      </section>
+    </header>
+
+    <section class="row feature-header">
+      <section class="col-md-12">
+        <img src="http://placehold.it/1140x350" alt="Featured Work image" class="img-responsive">
+      </section>
+      <section class="col-md-12">
+        <h2 class="text-muted">Featured Work</h2>
+      </section>
+    </section>
+
+    <section class="row feature-content text-center">
+      <section class="col-md-6 text-uppercase">
+        <img src="http://placekitten.com/555/300" alt="appify" class="img-responsive" data-toggle="modal" data-target="#project1">
+        <h3>Favorite app</h3>
+        <p><a href="http://github.com/dongr87">Link to project</a></p>
+      </section>
+      <section class="col-md-6 text-uppercase">
+        <img src="http://placehold.it/555x300" alt="appify" class="img-responsive">
+        <h3>Portfolio</h3>
+        <p><a href="http://github.com/dongr87">Link to project</a></p>
+      </section>
+    </section>
+
+    <section class="row feature-content text-center">
+      <section class="col-md-6 text-uppercase">
+        <img src="http://placehold.it/555x300" alt="appify" class="img-responsive">
+        <h3>Appify</h3>
+        <p><a href="http://github.com/dongr87">Link to project</a></p>
+      </section>
+      <section class="col-md-6 text-uppercase">
+        <img src="http://placehold.it/555x300" alt="appify" class="img-responsive">
+        <h3>Appify</h3>
+        <p><a href="http://github.com/dongr87">Link to project</a></p>
+      </section>
+    </section>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images/555.jpeg">
+          This was my first project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
