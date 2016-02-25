@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Change the n parameter in the url to advocate fizzbuzz</h2>
+
+<ol>
+    {% for x in range(1, n+1) %}
+        <li>
+        {% if x%3==0 %}
+            {% if x%5==0 %}
+                FizzBuzz
+            {% else %}
+                Fizz
+            {% endif %}
+        {% else %}
+            {% if x%5==0 %}
+                Buzz
+            {% else %}
+                {{x}}
+            {% endif %}
+        {% endif %}
+        </li>
+    {% endfor %}
+</ol>
+{% endblock %}

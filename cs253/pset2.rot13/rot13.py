@@ -13,7 +13,7 @@ def rot13(s):
                 c -= 13
             else:
                 c += 13
-        elif c >= ord('A') and c <= ord('Z'):
+        elif c <= ord('A') and c <= ord('Z'):
             if c> ord('M'):
                 c -= 13
             else:
