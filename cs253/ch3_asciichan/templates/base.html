@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCIIchan</title>
+    <style>
+        h1 {
+            background-color: #ddd;
+            color:#888;
+            margin: 0px;
+            height: 50px;
+            width: 500px;
+        }
+        .error {
+            background-color: lavender;
+            color: red;
+            width: 500px;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+        }
+        input[type=text] {
+            font-family: monospace;
+            padding: 2px;
+            font-size: 20px;
+        }
+        textarea {
+            font-family: monospace;
+            font-size: 17px;
+        }
+        hr {
+            margin: 20px auto;
+        }
+        input[type=submit] {
+            padding: 12px 30px;
+            background-color: navy;
+            color: lightgreen;
+            font-size: 24px;
+        }
+        .art + .art {
+            margin-top: 20px;
+        }
+        .art-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to ASCIIChan!</h1>
+    <form method="post">
+        <label>
+            <h3>Title</h3>
+            <input type="text" name="title" value="{{title}}">
+        </label>
+        <label>
+            <h3>Art</h3>
+            <textarea name="art" cols="80" rows="30">{{art}}</textarea>
+        </label>
+            <p class="error">{{error}}</p>
+            <input type="submit">
+    </form>
+
+    <hr>
+
+    {% for art in arts %}
+        <div class="art">
+            <div class="art-title">{{art.title}}</div>
+            <pre class="art-body">{{art.art}}</pre>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
